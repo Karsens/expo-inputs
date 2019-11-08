@@ -1,9 +1,9 @@
 {
   "name": "leckr-inputs",
-  "version": "3.3.2",
+  "version": "3.3.4",
   "description": "Inputs for data-forms by LECKR",
   "main": "index.js",
-  "repository": "https://github.com/EAT-CODE-KITE-REPEAT/leckr-inputs",
+  "repository": "https://github.com/EAT-CODE-KITE-REPEAT/expo-inputs",
   "author": "Wijnand Karsens <wijnandworld@hotmail.com>",
   "license": "MIT",
   "scripts": {
