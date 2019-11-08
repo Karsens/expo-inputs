@@ -1,0 +1,36 @@
+{
+  "name": "leckr-inputs",
+  "version": "3.3.2",
+  "description": "Inputs for data-forms by LECKR",
+  "main": "index.js",
+  "repository": "https://github.com/EAT-CODE-KITE-REPEAT/leckr-inputs",
+  "author": "Wijnand Karsens <wijnandworld@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "fastdeploy": "git add . && git commit -m \"Small improvements\" && yarn deploy",
+    "deploy": "yarn publish && git push"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-vector-icons": "*"
+  },
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "firebase": "^5.8.0",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-google-places-autocomplete": "^1.3.9",
+    "react-native-modal-selector": "^1.0.1",
+    "react-native-platform-touchable": "^1.1.1",
+    "react-native-super-actionsheet": "^1.0.5",
+    "react-native-vector-icons": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/expo": "^32.0.11",
+    "@types/react": "^16.8.15",
+    "expo": "^32.0.0",
+    "react": "^16.7.0",
+    "react-native": "^0.57.8"
+  }
+}
