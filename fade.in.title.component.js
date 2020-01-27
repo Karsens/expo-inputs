@@ -15,11 +15,11 @@ class FadeInTitle extends React.Component<P, S> {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({ show: this.props.show });
   }
 
-  componentWillReceiveProps({ show }) {
+  componentDidReceiveProps({ show }) {
     if (show !== this.state.show) {
       this.toggle(show);
     }

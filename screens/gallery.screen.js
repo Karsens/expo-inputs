@@ -10,8 +10,9 @@ import {
   Text,
   ScrollView
 } from "react-native";
-import Photo from "./photo.screen";
 import { MaterialIcons } from "react-native-vector-icons";
+
+import Photo from "./photo.screen";
 
 export default class GalleryScreen extends React.Component {
   state = {
