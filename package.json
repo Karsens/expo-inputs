@@ -1,14 +1,14 @@
 {
   "name": "leckr-inputs",
-  "version": "3.3.6",
+  "version": "3.3.7",
   "description": "Inputs for data-forms by LECKR",
   "main": "index.js",
   "repository": "https://github.com/EAT-CODE-KITE-REPEAT/expo-inputs",
   "author": "Wijnand Karsens <wijnandworld@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "fastdeploy": "git add . && git commit -m \"Small improvements\" && yarn deploy",
-    "deploy": "yarn publish && git push"
+    "push": "git add . && git commit -m \"Small improvements\" && git push",
+    "deploy": "yarn publish && yarn push"
   },
   "peerDependencies": {
     "expo": "*",
