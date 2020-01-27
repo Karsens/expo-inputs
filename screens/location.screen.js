@@ -1,5 +1,5 @@
 import React from "react";
-import { GooglePlacesAutocomplete } from "../../react-native-google-places-autocomplete/GooglePlacesAutocomplete";
+import { GooglePlacesAutocomplete } from "../react-native-google-places-autocomplete/GooglePlacesAutocomplete";
 
 class Location extends React.Component {
   static navigationOptions = props => ({ title: "Choose a location" });

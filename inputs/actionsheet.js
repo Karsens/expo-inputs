@@ -5,7 +5,15 @@ import ActionSheet from "react-native-super-actionsheet";
 
 const { width } = Dimensions.get("screen");
 
-export default ({ title, state, field, setFormState, value, values }) => {
+export default ({
+  onChange,
+  title,
+  state,
+  field,
+  setFormState,
+  value,
+  values
+}) => {
   const gotState = state[field] !== undefined && state[field] !== null;
   const selectedIndex = gotState ? state[field] : value;
   const selectedObject =
@@ -21,7 +29,10 @@ export default ({ title, state, field, setFormState, value, values }) => {
   const buttons = values.map(({ value, label }, index) => ({
     index,
     title: label,
-    onPress: () => setFormState({ [field]: value })
+    onPress: () => {
+      setFormState({ [field]: value });
+      onChange?.(value);
+    }
   }));
 
   buttons.push({
