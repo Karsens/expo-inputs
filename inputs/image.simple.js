@@ -42,12 +42,16 @@ class SimpleImage extends React.Component {
   };
 
   chooseImage = async () => {
-    const permission = await this.getPermissionAsync();
-
-    if (permission || Platform.OS === "web") {
+    if (Platform.OS === "web") {
       this._pickImage();
     } else {
-      console.log("Permis", permission);
+      const permission = await this.getPermissionAsync();
+
+      if (permission) {
+        this._pickImage();
+      } else {
+        console.log("Permis", permission);
+      }
     }
   };
 

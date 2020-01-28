@@ -21,7 +21,7 @@ class Categories extends React.Component {
 
     const currentValues2 =
       state[field] !== null
-        ? state[field].split(", ")
+        ? state[field]?.split(", ")
         : value
         ? value.toString().split(", ")
         : [];
