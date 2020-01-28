@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, Platform } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
 
@@ -44,7 +44,7 @@ class SimpleImage extends React.Component {
   chooseImage = async () => {
     const permission = await this.getPermissionAsync();
 
-    if (permission) {
+    if (permission || Platform.OS === "web") {
       this._pickImage();
     } else {
       console.log("Permis", permission);
