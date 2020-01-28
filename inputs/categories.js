@@ -20,11 +20,12 @@ class Categories extends React.Component {
     const { state, field, setFormState, value } = this.props;
 
     const currentValues2 =
-      state[field] !== null
-        ? state[field]?.split(", ")
+      state[field] !== null && state[field] !== undefined
+        ? state[field].split(", ")
         : value
         ? value.toString().split(", ")
         : [];
+
     const currentValues =
       currentValues2 && currentValues2.filter(v => v !== "");
 
