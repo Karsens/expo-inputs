@@ -19,7 +19,7 @@ class FadeInTitle extends React.Component<P, S> {
     this.setState({ show: this.props.show });
   }
 
-  componentDidReceiveProps({ show }) {
+  componentDidUpdate({ show }) {
     if (show !== this.state.show) {
       this.toggle(show);
     }
