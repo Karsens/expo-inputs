@@ -96,7 +96,7 @@ class SimpleImage extends React.Component {
           alignItems: "center"
         }}
       >
-        {options.component}
+        {options?.component}
         <TouchableOpacity onPress={() => this.chooseImage()}>
           {this.renderImageOrPlaceholder(currentValue)}
         </TouchableOpacity>

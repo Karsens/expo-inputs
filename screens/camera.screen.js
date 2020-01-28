@@ -296,7 +296,7 @@ export default class CameraScreen extends React.Component {
           backgroundColor: "transparent",
           flexDirection: "row",
           justifyContent: "space-around",
-          paddingTop: Constants.statusBarHeight / 2
+          paddingTop: 10
         }}
       >
         <TouchableOpacity

@@ -9,7 +9,7 @@ import {
 
 import { getColorByBgColor } from "../utils";
 export default ({ value, state, setFormState, field }) => {
-  const colors = "#1abc9c, #f1c40f, #f39c12, #2ecc71, #27ae60, #27ae60, #e67e22, #3498db, #2980b9, #e74c3c, #c0392b, #9b59b6, #9b59b6, #ecf0f1, #bdc3c7, #34495e, #2c3e50, #2c3e50, #7f8c8d".split(
+  const colors = "#1abc9c, #f1c40f, #f39c12, #2ecc71, #27ae60, #e67e22, #3498db, #2980b9, #e74c3c, #c0392b, #9b59b6, #9b59b6, #ecf0f1, #bdc3c7, #34495e, #2c3e50, #2c3e50, #7f8c8d".split(
     ", "
   );
 
