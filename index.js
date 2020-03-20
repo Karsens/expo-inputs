@@ -50,6 +50,7 @@ import Dates from "./inputs/dates";
 import Birthday from "./inputs/birthday";
 
 import TextArea from "./inputs/text.area";
+import Password from "./inputs/password";
 import Color from "./inputs/color";
 import BooleanInput from "./inputs/boolean.input";
 import SelectOne from "./inputs/select.one";
@@ -85,6 +86,7 @@ const screens = {
 // here default props are given to input components, besides all props it gets from data-form and the field-object.
 const inputs = ({ firebaseConfig, googlePlacesConfig, navigation }) => ({
   text: TextInput,
+  password: Password,
   date: DatePicker,
   dates: Dates,
   textArea: TextArea,
