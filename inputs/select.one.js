@@ -54,7 +54,7 @@ export default ({ state, field, setFormState, value, values }) => {
     >
       {values &&
         values.map(v => (
-          <Picker.Item key={v.key} label={v.label} value={v.value} />
+          <Picker.Item key={`key-${v.label}`} label={v.label} value={v.value} />
         ))}
     </Picker>
   );
