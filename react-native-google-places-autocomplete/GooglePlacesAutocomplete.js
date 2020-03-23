@@ -121,20 +121,18 @@ export default class GooglePlacesAutocomplete extends Component {
     return [...res, ...results];
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this._request = this.props.debounce
       ? debounce(this._request, this.props.debounce)
       : this._request;
-  }
 
-  componentDidMount() {
     // This will load the default value's search results after the view has
     // been rendered
     this._handleChangeText(this.state.text);
     this._isMounted = true;
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(nextProps) {
     let listViewDisplayed = true;
 
     if (nextProps.listViewDisplayed !== "auto") {
